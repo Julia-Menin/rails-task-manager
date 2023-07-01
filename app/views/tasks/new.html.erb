@@ -1,16 +1,16 @@
 <h1>Create a new task</h1>
 
-<div>
+<div class= m-4>
   <%= form_with model: @task do |f| %>
-  <div>
+  <div class = "my-2 p-1">
   <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.text_field :title%>
   </div>
-  <div>
+  <div class = "my-2 p-1">
   <%= f.label :details %>
   <%= f.text_area :details %>
   </div>
-  <div>
+  <div class = "my-2 p-1">
   <%= f.label :completed %>
   <%= f.check_box :completed %>
   </div>
@@ -18,6 +18,6 @@
   <% end %>
 </div>
 
-<div>
-<%= link_to "Back to main page", tasks_path %>
+<div class = "my-2 p-1">
+<%= link_to "Back to main page", tasks_path, class: "btn m-1 btn-primary" %>
 </div>
