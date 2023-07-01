@@ -2,6 +2,13 @@
 
 <h2><%= @task.details%></h2>
 
+<h2><% if @task.completed%>
+    <%= "This is done!"%>
+    <% else %>
+        <%= "To do"%>
+    <% end %>
+</h2>
+
 <div>
 <%= link_to "Edit the task", edit_tasks_path %>
 </div>
